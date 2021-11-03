@@ -1,6 +1,8 @@
 # cuda_and_contours
 Classic computer vision operations using NVIDIA GPUs
 
+![Nvidia_CUDA_Logo](https://user-images.githubusercontent.com/21957723/139969468-d4fe3d26-578e-4fe7-8c5a-f9f3c0991708.jpeg)
+
 Using only computer vision techniques (edge detection, thresholding, blurring, etc.) a developer can put together useful applications without having to use computational expensive machine learning algorithms. For example using background subtraction a developer could create an application that counts people going in and out of a store, or an application that counts cars entering and exiting a parking garage, or a motion detection application for use in security cameras. If developers wish to track the objects detected from background subtraction they simply apply contours to them. To speed up these applications a developer can use CUDA APIs to offload computer vision algorithms from the CPU to the GPU.
 
 ## Repo Programs
