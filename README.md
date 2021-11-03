@@ -8,12 +8,10 @@ Using only computer vision techniques (edge detection, thresholding, blurring, e
 |----------------------------	|----------------------------------------------------------------------------------------------------------	|
 | background_subtraction   | Program use MOG2 background subtractor to track people in a video frame using either CUDA or CPU to execute the algorithm|
 | color_space_cuda 	       | Program demonstrate how to optimally use CUDA in your application to move from one color space to another and simultaneously display them to the screen in real time.|
-|
+
 ## Setup
 
-This app requires an alwaysAI account. Head to the [Sign up page](https://www.alwaysai.co/dashboard) if you don't have an account yet. Follow the instructions to install the alwaysAI tools on your development machine.
-
-Next, create an empty project to be used with this app. When you clone this repo, you can run `aai app configure` within the repo directory and your new project will appear in the list.
+This app requires an alwaysAI account.  Head to the [Sign up page](https://www.alwaysai.co/dashboard) if you don't have an account yet. Follow the instructions to install the alwaysAI tools on your development machine.
 
 ## Usage
 
