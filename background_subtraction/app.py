@@ -61,7 +61,7 @@ def postprocess(gray_frame, cuda = False):
 
 
 def main():
-    CUDA = True
+    CUDA = False
     COLOR = False
     FILE = "vtest.avi"
     # mog2_process = edgeiq.MOG2(history=120, var_threshold=250, detect_shadows=True, cuda=CUDA)

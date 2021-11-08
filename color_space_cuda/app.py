@@ -4,7 +4,7 @@ import time
 import numpy as np
 
 class get_color_spaces(object):
-    def __init__(self, cuda=True):
+    def __init__(self, cuda=False):
         self.cuda = cuda
         self._initialized = False
 
@@ -60,6 +60,7 @@ def main():
     """Run color space application"""
     text = "Color Space"
     FILE = "race.mp4"
+    CUDA = False
     fps = edgeiq.FPS()
     try:
         with edgeiq.FileVideoStream(FILE, play_realtime=True) as video_stream,\
@@ -67,7 +68,7 @@ def main():
             # check video stream input fps
             print(video_stream._thread._fps)
             time.sleep(2.0)
-            color_space = get_color_spaces(cuda=True)
+            color_space = get_color_spaces(cuda=CUDA)
             fps.start()
             while video_stream.more():
                 frame = video_stream.read()
